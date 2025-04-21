@@ -419,7 +419,7 @@ const App = () => {
     display: "flex",
     alignItems: "flex-start",
     paddingTop: "40px", // dá espaço do topo
-    paddingLeft: "130px",
+    paddingLeft: "50px",
   }}
 >
   <div
