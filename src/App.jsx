@@ -196,7 +196,7 @@ const data = [
   { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Cancelada', min: 700, max: 899, ocorrencias: 1, diario: 3.0, semana: 1, dif: 5.0, img: img6 },
   { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Cancelada', min: 900, max: 999, ocorrencias: 1, diario: 2.5, semana: 1, dif: 5.0, img: img7 },
   { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Cancelada', min: 1000, max: 1999, ocorrencias: 1, diario: 2.0, semana: 1, dif: 5.0, img: img8 },
-  { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Cancelada', min: 2000, max: 2999, ocorrencias: 1, diario: 2.5, semana: 1.5, dif: 5.0, img: img9 },
+  { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Cancelada', min: 2000, max: 2999, ocorrencias: 1, diario: 1.5, semana: 1, dif: 5.0, img: img9 },
   { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Cancelada', min: 3000, max: 9999999, ocorrencias: 1, diario: 50.0, semana: 1, dif: 5.0, img: img10 },
   { periodicidade: '1h', plataforma: 'Debito', tipoMetrica: 'Cancelada', min: 0, max: 49, ocorrencias: 1, diario: 20.0, semana: 1, dif: 2.0, img: img11 },
   { periodicidade: '1h', plataforma: 'Debito', tipoMetrica: 'Cancelada', min: 50, max: 99, ocorrencias: 1, diario: 10.0, semana: 1, dif: 2.0, img: img12 },
@@ -317,7 +317,7 @@ const data = [
   { periodicidade: '1h', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 501, max: 9999999, ocorrencias: 1, diario: 3.0, semana: 0, dif: 0, img: img146 },
   { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 10, max: 99, ocorrencias: 3, diario: 10.0, semana: 0, dif: 0, img: img147 },
   { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 100, max: 299, ocorrencias: 2, diario: 5.0, semana: 0, dif: 0, img: img148 },
-  { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 300, max: 1999, ocorrencias: 2, diario: 2.0, semana: 0, dif: 0, img: img149 },
+  { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 300, max: 1999, ocorrencias: 1, diario: 1.0, semana: 0, dif: 0, img: img149 },
   { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 2000, max: 4999, ocorrencias: 2, diario: 0.5, semana: 0, dif: 0, img: img150 },
   { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 5000, max: 10000, ocorrencias: 3, diario: 0.1, semana: 0, dif: 0, img: img151 },
   { periodicidade: '10m', plataforma: 'Credito', tipoMetrica: 'Desfazimento', min: 10001, max: 9999999, ocorrencias: 3, diario: 0.1, semana: 0, dif: 0, img: img152 },
@@ -375,77 +375,142 @@ const data = [
   { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 10, max: 99, ocorrencias: 3, diario: 10.0, semana: 0, dif: 0, img: img165 },
   { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 100, max: 299, ocorrencias: 2, diario: 5.0, semana: 0, dif: 0, img: img166 },
   { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 300, max: 1999, ocorrencias: 2, diario: 2.0, semana: 0, dif: 0, img: img167 },
-  { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 2000, max: 4999, ocorrencias: 1, diario: 0.5, semana: 0, dif: 0, img: img168 },
-  { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 5000, max: 10000, ocorrencias: 1, diario: 0.1, semana: 0, dif: 0, img: img169 },
-  { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 10001, max: 9999999, ocorrencias: 1, diario: 0.1, semana: 0, dif: 0, img: img170 },
+  { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 2000, max: 4999, ocorrencias: 2, diario: 0.5, semana: 0, dif: 0, img: img168 },
+  { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 5000, max: 10000, ocorrencias: 3, diario: 0.1, semana: 0, dif: 0, img: img169 },
+  { periodicidade: '10m', plataforma: 'Debito', tipoMetrica: 'Timeout', min: 10001, max: 9999999, ocorrencias: 3, diario: 0.1, semana: 0, dif: 0, img: img170 },
 
 
 ];
-
 const App = () => {
   const [search, setSearch] = useState("");
+  const [search2, setSearch2] = useState("");
   const [plataforma, setPlataforma] = useState("");
   const [minCapturas, setMinCapturas] = useState("");
   const [maxCapturas, setMaxCapturas] = useState("");
+  const [minDailyPercentage, setMinDailyPercentage] = useState(""); // Novo filtro
+  const [maxDailyPercentage, setMaxDailyPercentage] = useState(""); // Novo filtro
   const [modalImg, setModalImg] = useState(null);
+// Ordem personalizada: 1h > 1d > 10m
+const prioridadePeriodicidade = {
+  '1d': 3,
+  '1h': 2,
+  '10m': 1,
+};
 
-  const filteredData = data.filter((row) => {
-    const matchesSearch = Object.values(row).some((val) =>
-      val.toString().toLowerCase().includes(search.toLowerCase())
-    );
+const sortedData = [...data].sort((a, b) => {
+  return prioridadePeriodicidade[b.periodicidade] - prioridadePeriodicidade[a.periodicidade];
+});
 
-    const matchesPlataforma =
-      !plataforma || row.plataforma.toLowerCase().includes(plataforma.toLowerCase());
+const filteredData = sortedData.filter((row) => {
+  const matchesSearch1 = Object.values(row).some((val) =>
+    val.toString().toLowerCase().includes(search.toLowerCase())
+  );
 
-    const matchesMin =
-      minCapturas === "" || row.min >= parseInt(minCapturas);
+  const matchesSearch2 = Object.values(row).some((val) =>
+    val.toString().toLowerCase().includes(search2.toLowerCase())
+  );
 
-    const matchesMax =
-      maxCapturas === "" || row.max <= parseInt(maxCapturas);
+  const matchesPlataforma =
+    !plataforma || row.plataforma.toLowerCase().includes(plataforma.toLowerCase());
 
-    return matchesSearch && matchesPlataforma && matchesMin && matchesMax;
-  });
+  const matchesMin = minCapturas === "" || row.min >= parseInt(minCapturas);
+  const matchesMax = maxCapturas === "" || row.max <= parseInt(maxCapturas);
+
+  const matchesMinDaily = minDailyPercentage === "" || row.diario >= parseFloat(minDailyPercentage);
+  const matchesMaxDaily = maxDailyPercentage === "" || row.diario <= parseFloat(maxDailyPercentage);
+
+  return (
+    matchesSearch1 &&
+    matchesSearch2 &&
+    matchesPlataforma &&
+    matchesMin &&
+    matchesMax &&
+    matchesMinDaily &&
+    matchesMaxDaily
+  );
+});
+
 
   const openModal = (imgSrc) => setModalImg(imgSrc);
   const closeModal = () => setModalImg(null);
 
   return (
     <div
-  style={{
-    fontFamily: "sans-serif",
-    margin: 0,
-    padding: 0,
-    backgroundSize: "cover",
-    display: "flex",
-    alignItems: "flex-start",
-    paddingTop: "40px", // dá espaço do topo
-    paddingLeft: "50px",
-  }}
->
-  <div
+      style={{
+        fontFamily: "sans-serif",
+        margin: 0,
+        padding: 0,
+        backgroundSize: "cover",
+        display: "flex",
+        alignItems: "flex-start",
+        paddingTop: "40px",
+        paddingLeft: "50px",
+      }}
+    >
+      <div
+        style={{
+          background: "rgba(255, 255, 255, 0.85)",
+          borderRadius: "26px",
+          padding: "30px",
+          margin: "0 auto",
+          boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
+          maxWidth: "1400px",
+          width: "100%",
+          overflowX: "auto",
+        }}
+      >
+       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>
+  <h2
     style={{
-      background: "rgba(255, 255, 255, 0.85)",
-      borderRadius: "26px",
-      padding: "30px",
-      margin: "0 auto", // centraliza horizontalmente
-      boxShadow: "0 4px 20px rgba(0, 0, 0, 0.3)",
-      maxWidth: "1400px", // limita largura máxima
-      width: "100%",
-      overflowX: "auto", // adiciona rolagem horizontal se necessário
+      textAlign: "center",
+      color: "#333",
+      marginBottom: "0px",
+      marginTop: "0px",
     }}
   >
+    Tabela Dinâmica de Métricas
+  </h2>
+  <a
+    href="https://elo-confluence.atlassian.net/wiki/x/CgC_nQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      backgroundColor: "#000", // cinza
+      color: "#fff",            // texto branco
+      padding: "10px 16px",
+      borderRadius: "20px",
+      textDecoration: "none",
+      fontWeight: "bold",
+      fontSize: "0.95rem",
+      whiteSpace: "nowrap",
+    }}
+  >
+    Link documento RCA
+  </a>
+</div>
 
-        <h2 style={{ textAlign: "center", color: "#333", marginBottom: "20px" }}>
-          Tabela Dinâmica de Métricas
-        </h2>
 
         {/* Filtros */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "20px" }}>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "10px",
+            marginBottom: "20px",
+          }}
+        >
           <input
             type="text"
             placeholder="Filtro geral..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
+            style={inputStyle}
+          />
+          <input
+            type="text"
+            placeholder="filtro geral..."
+            value={search2}
+            onChange={(e) => setSearch2(e.target.value)}
             style={inputStyle}
           />
           <input
@@ -462,7 +527,8 @@ const App = () => {
             onChange={(e) => setMinCapturas(e.target.value)}
             style={inputStyle}
           />
-          
+        
+       
         </div>
 
         <div style={{ overflowX: "auto" }}>
@@ -487,7 +553,9 @@ const App = () => {
                   "diffLastWeek",
                   "Imagem",
                 ].map((th) => (
-                  <th key={th} style={thStyle}>{th}</th>
+                  <th key={th} style={thStyle}>
+                    {th}
+                  </th>
                 ))}
               </tr>
             </thead>
