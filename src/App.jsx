@@ -470,6 +470,10 @@ const filteredData = sortedData.filter((row) => {
   >
     Tabela Dinâmica de Métricas
   </h2>
+ 
+    <span style={{ fontWeight: "bold", fontSize: "0.95rem" }}>
+      Total: {filteredData.length}
+    </span>
   <a
     href="https://elo-confluence.atlassian.net/wiki/x/CgC_nQ"
     target="_blank"
